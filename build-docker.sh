@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t webapp-demo:1.1 .
+docker build -t webapp-demo:1.0 .
