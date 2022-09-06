@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-demo
+  labels:
+    name: webapp-demo
+spec:
+  containers:
+  - name: webapp-demo
+    image: webapp-demo:1.0
+    ports:
+      - containerPort: 80

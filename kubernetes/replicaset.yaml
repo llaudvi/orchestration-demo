@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: webapp-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: webapp-demo
+  template:
+    metadata:
+      name: webapp-demo
+      labels:
+        name: webapp-demo
+    spec:
+      containers:
+        - name: webapp-demo
+          image: webapp-demo:1.0
+          ports:
+            - containerPort: 80
